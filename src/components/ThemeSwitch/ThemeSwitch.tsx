@@ -2,6 +2,7 @@ import React from 'react'
 import Switch from 'react-switch'
 import { shade } from 'polished'
 import { DefaultTheme } from 'styled-components'
+import { SwitchLabel, SwitchSpan } from './styles'
 
 interface props {
   theme: DefaultTheme
@@ -11,8 +12,8 @@ interface props {
 export const ThemeSwitch: React.FC<props> = ({ theme, toggleTheme }) => {
   return (
     <>
-      <label style={{ display: 'flex', justifyContent: 'center' }}>
-        <span>Dark Mode</span>
+      <SwitchLabel>
+        <SwitchSpan>Dark Mode</SwitchSpan>
         <Switch
           onChange={toggleTheme}
           checked={theme.title === 'dark'}
@@ -24,7 +25,7 @@ export const ThemeSwitch: React.FC<props> = ({ theme, toggleTheme }) => {
           onColor={theme.colors.secondary}
           offColor={shade(0.2, theme.colors.primary)}
         />
-      </label>
+      </SwitchLabel>
     </>
   )
 }

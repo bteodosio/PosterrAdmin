@@ -8,7 +8,7 @@ export const LiveChat: React.FC = () => {
         style={{
           border: 0,
           width: '400px',
-          height: '400px',
+          height: '100vh',
           borderRadius: '4px'
         }}
       ></iframe>
