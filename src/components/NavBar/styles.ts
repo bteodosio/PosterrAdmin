@@ -30,7 +30,8 @@ export const MenuNav = styled.nav`
   position: fixed;
   top: 0;
   left: ${props => (!(props.hidden ?? false) ? '-100%' : '0')};
-  transition: ${props => (!(props.hidden ?? false) ? '850ms' : '350ms')}; ;
+  transition: ${props => (!(props.hidden ?? false) ? '850ms' : '350ms')};
+  z-index: 1;
 `
 
 export const MenuItemText = styled.li`
