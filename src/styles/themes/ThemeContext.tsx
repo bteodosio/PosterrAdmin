@@ -13,7 +13,7 @@ interface props {
 }
 
 export const ThemeContextProvider: React.FC<props> = ({ children }) => {
-  const [theme, setTheme] = usePersistentState<DefaultTheme>('theme', light)
+  const [theme, setTheme] = usePersistentState<DefaultTheme>('theme', dark)
 
   const toggleTheme = (): void => {
     setTheme(previousTheme => {

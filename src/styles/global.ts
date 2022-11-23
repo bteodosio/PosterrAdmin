@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 
@@ -19,4 +19,7 @@ export default createGlobalStyle`
     color: ${props => props.theme.colors.text};
     font-family: sans-serif;
   }
+`
+export const Title = styled.h1`
+  font-family: 'Pacifico', cursive;
 `

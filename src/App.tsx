@@ -1,6 +1,6 @@
 import React from 'react'
 import { Header } from './components/Header'
-import GlobalStyles from './styles/global'
+import GlobalStyles, { Title } from './styles/global'
 import { ThemeContextProvider } from './styles/themes/ThemeContext'
 import { NavBar } from './components/NavBar/NavBar'
 import { SideBarData } from './SideBarData'
@@ -17,6 +17,7 @@ const App: React.FC = () => {
         <Router>
           <Header>
             <NavBar menuItems={SideBarData} />
+            <Title>Fantastico Mundo de Bruno</Title>
           </Header>
           <LiveChat />
           <Routes>
