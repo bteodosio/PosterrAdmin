@@ -22,4 +22,5 @@ export default createGlobalStyle`
 `
 export const Title = styled.h1`
   font-family: 'Pacifico', cursive;
+  font-size: 1.3rem;
 `
